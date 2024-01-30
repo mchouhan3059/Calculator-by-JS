@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        table {
+            width: 500px;
+            margin: 50vh auto 0 auto;
+            border: 1px solid;
+            border-collapse: collapse;
+            transform: translateY(-50%);
+        }
+
+        table tr td {
+            border: 1px solid rgb(255, 255, 255);
+            text-align: center;
+            background-color: rgb(182, 154, 154);
+        }
+
+        table tr td button {
+            padding: 20px;
+            width: 100%;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: transparent;
+            color: white;
+        }
+
+        table tr td input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px;
+            text-align: right;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><button class="btn">Clear</button></td>
+            <td colspan="3"><input type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn">+</button>
+            </td>
+            <td>
+                <button class="btn">1</button>
+            </td>
+            <td>
+                <button class="btn">2</button>
+            </td>
+            <td>
+                <button class="btn">3</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn">-</button>
+            </td>
+            <td>
+                <button class="btn">4</button>
+            </td>
+            <td>
+                <button class="btn">5</button>
+            </td>
+            <td>
+                <button class="btn">6</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn">*</button>
+            </td>
+            <td>
+                <button class="btn">7</button>
+            </td>
+            <td>
+                <button class="btn">8</button>
+            </td>
+            <td>
+                <button class="btn">9</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn">/</button>
+            </td>
+            <td>
+                <button class="btn">.</button>
+            </td>
+            <td>
+                <button class="btn">0</button>
+            </td>
+            <td>
+                <button class="btn">=</button>
+            </td>
+        </tr>
+    </table>
+</body>
+<script src="scripts/script.js"></script>
+
+</html>
